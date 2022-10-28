@@ -1,0 +1,118 @@
+:root {
+  --main-color: #b59f5b;
+  --main-color-opacity: rgba(181, 159, 91, 0.6);
+  --input-bg: #f4f7f6;
+  --focus-color-dark: #323232;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+p, li {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:focus {
+  outline: none;
+}
+
+a:focus-visible {
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #0f0d0e;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 67px;
+  height: 4px;
+  background-color: var(--main-color);
+  opacity: 0.4;
+}
+
+@media (min-width: 641px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 35px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+  
+  .title-fz14 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .title-fz14 {
+    font-size: 14px;
+  }
+  
+}
+

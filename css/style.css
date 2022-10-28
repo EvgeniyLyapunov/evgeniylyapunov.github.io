@@ -1,0 +1,13 @@
+@import url("libs/normalize.css");
+@import url("libs/fonts.css");
+
+@import url("base.css");
+
+@import url("blocks/hero.css");
+@import url("blocks/trends.css");
+@import url("blocks/main.css");
+@import url("blocks/aside.css");
+@import url("blocks/products.css");
+@import url("blocks/footer.css");
+
+@import url("blocks/modal.css");
