@@ -41,7 +41,7 @@
   flex-direction: column;
 }
 
-.modal__span-input {
+.modal__text {
   display: block;
   margin-bottom: 12px;
   font-size: 13px;
@@ -92,13 +92,6 @@
   opacity: 1;
 }
 
-.modal__span-radio {
-  display: block;
-  margin-bottom: 12px;
-  font-size: 13px;
-  color: #444;
-}
-
 .modal__radio-block {
   display: flex;
   align-items: center;
@@ -113,7 +106,7 @@
   cursor: pointer;
 }
 
-.span-yes, .span-no {
+.modal__radio-span {
   position: relative;
 }
 
@@ -121,7 +114,7 @@
   margin-right: 30px;
 }
 
-.span-yes::before, .span-no::before {
+.modal__radio-span::before {
   content: "";
   position: absolute;
   left: -28px;
@@ -132,21 +125,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size:contain;
+
 }
 
-.modal__radio:checked + .span-yes::before {
+.modal__radio:checked + .modal__radio-span::before {
   background-image: url("../../svg/form-circle.svg");
-}
-
-.modal__radio:checked + .span-no::before {
-  background-image: url("../../svg/form-circle.svg");
-}
-
-.modal__span-textarea {
-  display: block;
-  margin-bottom: 12px;
-  font-size: 13px;
-  color: #444;
 }
 
 .modal__textarea {

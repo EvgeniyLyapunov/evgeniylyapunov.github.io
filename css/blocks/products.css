@@ -135,9 +135,13 @@
     flex-basis: 290px;
   }
 
-  .products__card:nth-child(2n-1) {
+  .products__card_mr-md {
     margin-right: 66px;
   }
+
+  /* .products__card:nth-child(2n-1) {
+    margin-right: 66px;
+  } */
 
   .products__card:last-child {
     flex-grow: 0;
@@ -161,6 +165,10 @@
     padding-left: 23px;
   }
 
+  .products__card_mr-md {
+    margin-right: auto;
+  }
+
   .products__card:nth-child(2n-1) {
     margin-right: auto;
   }
@@ -170,6 +178,10 @@
     width: 300px;
     margin-top: 23px;
     margin-right: 113px;
+  }
+
+  .products__card_mr-xl {
+    margin-right: 0;
   }
 
   .products__card:nth-child(3n+3) {

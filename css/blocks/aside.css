@@ -281,7 +281,7 @@
     width: 270px;
   }
 
-  .search__input::placeholder, .subscribe__input::placeholder {
+  .input-placeholder::placeholder {
     font-size: 13px;
   }
 
